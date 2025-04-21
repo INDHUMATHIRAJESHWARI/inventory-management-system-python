@@ -22,6 +22,7 @@ class Inventory_Management_System:
         cursor=self.connection.cursor()
         cursor.execute(q)
         r=cursor.fetchall()
+        print("Product_ID  |  Product_Name  |  Category  |Price|Quantity")
         for i in r:
             for j in i:
                 print(j,end='\t')
